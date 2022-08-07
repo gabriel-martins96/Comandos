@@ -1,0 +1,42 @@
+programa
+{
+	
+funcao contador (inteiro i, inteiro f, inteiro p){
+		// correção caso inserção seja -x
+    se (p < 0) {
+			p = p * - 1
+		}
+		
+		se (i < f) {
+		para (i; i <= f; i+=p){
+			se (i < f) {
+			escreva(i + " -> ")	
+			}senao {
+				escreva (i)
+				pare
+			}
+		}
+		}
+		se (i > f) {
+				
+		para (i; i >= f; i-=p){
+			se (i > f) {
+			escreva(i + " -> ")	
+			}senao {
+				escreva (i)
+				pare
+			}
+	}
+	}
+	}
+	
+	
+	funcao inicio()
+{
+	
+		contador(0, 10, 2)
+		escreva("\n")
+		contador (10, 50, -5)
+	}
+
+}
