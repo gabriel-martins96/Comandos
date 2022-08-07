@@ -1,0 +1,30 @@
+programa
+{
+
+	
+	funcao tabuada(inteiro num, inteiro altura) {
+	inteiro x
+	
+	escreva ("------------TABUADA-------------------")
+	escreva("\n")
+	para (inteiro i = 0 ; i <= altura; i++){
+		escreva(num + " X " + i + " = " + num*i + "\n") 
+	}
+
+	escreva ("--------------------------------------")
+	}
+	
+		
+	funcao inicio()
+	{
+		inteiro altura
+		inteiro num
+		escreva("Quer ver tabuada de qual número? \n")
+		escreva("R:")
+		leia (num)		
+		escreva("Até que altura?\n")
+		escreva("R:")		
+		leia(altura)	
+		tabuada(num, altura)
+	}
+}
