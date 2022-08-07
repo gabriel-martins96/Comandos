@@ -1,0 +1,28 @@
+programa
+{
+	inclua biblioteca Texto --> t
+	
+	
+	funcao linha (inteiro qtd) {
+	para (inteiro i = 1; i < qtd; i++) {
+		escreva ("-")  
+	}
+	}
+	funcao escrever (cadeia txt) {
+		inteiro qtd = t.numero_caracteres(txt) + 1
+		linha (qtd)
+		escreva ("\n")
+		escreva (txt)
+		escreva ("\n")
+		linha (qtd)		
+		escreva ("\n")
+	}
+
+	
+	funcao inicio()
+	{
+		escrever("Olá, tudo bom?")
+		escrever("Eu sou aluno do Estudonauta.")
+		escrever("Vou aprender a programa.")
+	}
+}
