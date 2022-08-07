@@ -1,0 +1,36 @@
+programa
+{
+	inclua biblioteca Util
+--> u
+	
+	funcao analisar(inteiro vet[]){
+		inteiro numvet = u.numero_elementos(vet)
+		escreva("====================ANALISANDO====================\n")
+		escreva("O vetor possui "+numvet+" elementos\n")
+		para (inteiro i = 0; i < numvet; i++){
+			escreva ("["+i+"] = "+vet[i]+" ")
+		}
+		escreva("\n")
+		escreva ("Os valores pares estão nas posições: ")
+		para (inteiro i = 0; i < numvet; i++){
+			se (vet[i] % 2 == 0){
+				escreva (i+" ")
+			}
+		}
+		escreva("\n")
+		escreva ("Os valores impares estão nas posições: ")
+		para (inteiro i = 0; i < numvet; i++){
+			se (vet[i] % 2 != 0){
+				escreva (i+" ")
+		}				
+			
+		}
+		}
+	
+	
+	funcao inicio()
+	{
+		inteiro vet[]= {2,8,9,10,15}
+		analisar(vet)
+	}
+}
